@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  transition: background 0.5s ease;
+}
+ 
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  transition: transform 0.3s ease;
+}
+ 
+.container:hover {
+  transform: translateY(-5px);
+}
+ 
+h1 {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+}
+ 
+.counter-value {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #444;
+  margin: 30px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+ 
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+ 
+button {
+  padding: 15px 30px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: white;
+  outline: none;
+}
+ 
+.decrement {
+  background-color: #e74c3c;
+  box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+}
+ 
+.increment {
+  background-color: #2ecc71;
+  box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
+}
+ 
+button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+ 
+button:active {
+  transform: translateY(1px);
+}
+ 
+@media (max-width: 480px) {
+  .container {
+    padding: 30px 20px;
+  }
+   
+  h1 {
+    font-size: 1.8rem;
+  }
+   
+  .counter-value {
+    font-size: 4rem;
+  }
+   
+  button {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+  }
+}
